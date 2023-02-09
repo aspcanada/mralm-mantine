@@ -1,9 +1,11 @@
-import { Button, Group } from "@mantine/core";
+import { Welcome } from '../components/Welcome/Welcome';
+import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
-export default function IndexPage() {
+export default function HomePage() {
   return (
-    <Group mt={50} position="center">
-      <Button size="xl">Welcome to Mantine!</Button>
-    </Group>
+    <>
+      <Welcome />
+      <ColorSchemeToggle />
+    </>
   );
 }
