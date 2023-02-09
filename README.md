@@ -1,38 +1,172 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A statically generated blog example using Next.js and Storyblok
 
-## Getting Started
+This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Storyblok](https://www.storyblok.com/) as the data source.
 
-First, run the development server:
+## Demo
+
+[https://next-blog-storyblok.vercel.app/](https://next-blog-storyblok.vercel.app/)
+
+## Deploy your own
+
+Once you have access to [the environment variables you'll need](#step-6-set-up-environment-variables), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-storyblok&project-name=cms-storyblok&repository-name=cms-storyblok&env=STORYBLOK_PREVIEW_SECRET,STORYBLOK_API_KEY&envDescription=Required%20to%20connect%20the%20app%20with%20Storyblok&envLink=https://vercel.link/cms-storyblok-env)
+
+### Related examples
+
+- [WordPress](/examples/cms-wordpress)
+- [DatoCMS](/examples/cms-datocms)
+- [Sanity](/examples/cms-sanity)
+- [TakeShape](/examples/cms-takeshape)
+- [Prismic](/examples/cms-prismic)
+- [Contentful](/examples/cms-contentful)
+- [Agility CMS](/examples/cms-agilitycms)
+- [Cosmic](/examples/cms-cosmic)
+- [Strapi](/examples/cms-strapi)
+- [ButterCMS](/examples/cms-buttercms)
+- [GraphCMS](/examples/cms-graphcms)
+- [Kontent](/examples/cms-kontent)
+- [Ghost](/examples/cms-ghost)
+- [Umbraco Heartcore](/examples/cms-umbraco-heartcore)
+- [Blog Starter](/examples/blog-starter)
+- [Builder.io](/examples/cms-builder-io)
+- [DotCMS](/examples/cms-dotcms)
+- [Enterspeed](/examples/cms-enterspeed)
+
+## How to use
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npx create-next-app --example cms-storyblok cms-storyblok-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+yarn create next-app --example cms-storyblok cms-storyblok-app
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+pnpm create next-app --example cms-storyblok cms-storyblok-app
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Configuration
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Step 1. Create an account on Storyblok
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[Create an account on Storyblok](https://app.storyblok.com/).
 
-## Learn More
+When signing up, select **Create a new space**. Its name can be anything.
 
-To learn more about Next.js, take a look at the following resources:
+### Step 2. Create the `Authors` folder
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+From the dashboard, create a new folder called `Authors`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- For **Default content type**, select **Add new**.
+- Name of content type should be `author`.
+- Choose **Blank** as the content type blueprint.
 
-## Deploy on Vercel
+### Step 3. Create an `author` entry
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In the `Authors` folder, create a new entry.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Name** can be anything, such as `Test Author`.
+
+After creating the entry, click **Define schema**.
+
+- Add a key called `picture`. Then click `picture` and set the **Type** as **Asset** and select **Images**.
+
+Then upload an image to `picture`. You can use an [image from Unsplash](https://unsplash.com/).
+
+Finally, after uploading, click **Publish**.
+
+### Step 4. Create the `Posts` folder
+
+After publishing the author, go back to the dashboard by clicking **Content** on the sidebar.
+
+This time, create a new folder called `Posts`.
+
+- For **Default content type**, select **Add new**.
+- Name of content type should be `post`.
+- Choose **Post** as the content type blueprint.
+
+### Step 5. Create a `post` entry
+
+In the `Posts` folder, create a new entry.
+
+- **Name** can be anything.
+
+Now, populate each field.
+
+- **Title** can be any text.
+- **Image** can be an [image from Unsplash](https://unsplash.com/).
+- **Intro** can be any text.
+- **Long Text** can be any text.
+- **Author** should be the author created earlier.
+
+Finally, click **Publish**.
+
+You can create more posts under the `Posts` folder. Make sure to publish each one.
+
+### Step 6. Set up environment variables
+
+Go to the **Settings** menu for your space, and click **API-Keys**.
+
+Then copy the **preview** token on the page.
+
+Next, copy the `.env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
+
+```bash
+cp .env.local.example .env.local
+```
+
+Then set each variable on `.env.local`:
+
+- `STORYBLOK_API_KEY` should be the API key you just copied.
+- `STORYBLOK_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [the Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
+
+### Step 7. Run Next.js in development mode
+
+```bash
+npm install
+npm run dev
+
+# or
+
+yarn install
+yarn dev
+```
+
+Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, you can post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+
+### Step 8. Try preview mode
+
+To try preview mode, create another post like before (you can try duplicating), but **do not publish it - just save it**:
+
+Now, if you go to the post page on localhost, you won't see this post because it’s not published. However, if you use the **Preview Mode**, you'll be able to see the change ([Documentation](https://nextjs.org/docs/advanced-features/preview-mode)).
+
+To enable the Preview Mode, go to this URL:
+
+```
+http://localhost:3000/api/preview?secret=<secret>&slug=<slug>
+```
+
+- `<secret>` should be the string you entered for `STORYBLOK_PREVIEW_SECRET`.
+- `<slug>` should be the post's `slug` (which can be seen on the **Config** section).
+
+You should now be able to see the draft post. To exit the preview mode, you can click **Click here to exit preview mode** at the top.
+
+### Step 9. Deploy on Vercel
+
+You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+#### Deploy Your Local Project
+
+To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and [import to Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example).
+
+**Important**: When you import your project on Vercel, make sure to click on **Environment Variables** and set them to match your `.env.local` file.
+
+#### Deploy from Our Template
+
+Alternatively, you can deploy using our template by clicking on the Deploy button below.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-storyblok&project-name=cms-storyblok&repository-name=cms-storyblok&env=STORYBLOK_PREVIEW_SECRET,STORYBLOK_API_KEY&envDescription=Required%20to%20connect%20the%20app%20with%20Storyblok&envLink=https://vercel.link/cms-storyblok-env)
