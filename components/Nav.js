@@ -24,7 +24,7 @@ export default function Nav() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Mr ALM</span>
             <Image
-              // className="h-8"
+              className="h-8"
               src={Logo}
               alt=""
               width={32}
@@ -65,12 +65,14 @@ export default function Nav() {
           className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden"
         >
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 className="h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600"
+                src={Logo}
                 alt=""
+                width={32}
+                height={32}
               />
             </Link>
             <button
