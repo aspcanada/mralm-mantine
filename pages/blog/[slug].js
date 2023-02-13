@@ -11,7 +11,6 @@ import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/blog/post-title'
 
-
 export default function PostPage({ post, morePosts, preview }) {
   const router = useRouter()
 
@@ -29,9 +28,7 @@ export default function PostPage({ post, morePosts, preview }) {
           <>
             <article>
               <Head>
-                <title>
-                  {post.title} | Mr Arms Length Mortgage
-                </title>
+                <title>{post.title} | Mr Arms Length Mortgage</title>
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>
               <PostHeader

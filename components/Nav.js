@@ -7,7 +7,10 @@ import Link from 'next/link'
 
 const navigation = [
   { name: 'What Is It?', href: '/what-is-it' },
-  { name: 'Benefits', href: '/what-is-it/benefits-features-in-an-arms-length-mortgage' },
+  {
+    name: 'Benefits',
+    href: '/what-is-it/benefits-features-in-an-arms-length-mortgage',
+  },
   { name: 'Blog', href: '/blog' },
   // { name: 'Marketplace', href: '#' },
   { name: 'About', href: '/about' },
@@ -23,13 +26,7 @@ export default function Nav() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Mr ALM</span>
-            <Image
-              className="h-8"
-              src={Logo}
-              alt=""
-              width={32}
-              height={32}
-            />
+            <Image className="h-8" src={Logo} alt="" width={32} height={32} />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -54,7 +51,10 @@ export default function Nav() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
@@ -67,13 +67,7 @@ export default function Nav() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <Image
-                className="h-8"
-                src={Logo}
-                alt=""
-                width={32}
-                height={32}
-              />
+              <Image className="h-8" src={Logo} alt="" width={32} height={32} />
             </Link>
             <button
               type="button"
@@ -110,5 +104,5 @@ export default function Nav() {
         </Dialog.Panel>
       </Dialog>
     </div>
-  );
+  )
 }
