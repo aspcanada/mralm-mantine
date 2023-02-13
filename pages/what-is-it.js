@@ -3,7 +3,6 @@
 // mortgage that is held within an individual’s registered retirement…
 import Container from '../components/container'
 import Layout from '../components/layout'
-// import Nav from '../components/nav'
 
 export default function WhatIsItPage() {
   return (
