@@ -1,19 +1,20 @@
-import Container from '../../components/container'
-import MoreStories from '../../components/blog/more-stories'
-import HeroPost from '../../components/blog/hero-post'
-import Intro from '../../components/intro'
-import Layout from '../../components/layout'
-import { getAllPostsForHome } from '../../lib/api'
+import Container from '../components/container'
+import MoreStories from '../components/blog/more-stories'
+import HeroPost from '../components/blog/hero-post'
+import Intro from '../components/blog/intro'
+import Layout from '../components/layout'
+import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 
-export default function Index({ preview, allPosts }) {
+export default function BlogPage({ preview, allPosts }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
+
   return (
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Mr Arms Length Mortgage | Educating Canadians how to invest in mortgages using their RRSPs.</title>
+          <title>Blog | Mr Arms Length Mortgage</title>
         </Head>
         <Container>
           <Intro />

@@ -1,12 +1,12 @@
 import Nav from '../components/Nav'
 import Hero from '../components/Hero'
+import Layout from '../components/Layout'
 
-export default function Index() {
+export default function HomePage() {
 
   return (
-    <div className="isolate bg-white">
-      <Nav />
+    <Layout>
       <Hero />
-    </div>
+    </Layout>
   )
 }

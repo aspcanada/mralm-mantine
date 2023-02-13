@@ -1,12 +1,17 @@
 // meta description
 // What is an Arm’s Length Mortgage? An “Arm’s Length Mortgage” refers to a 
 // mortgage that is held within an individual’s registered retirement…
+import Container from '../components/container'
+import Layout from '../components/layout'
+import Nav from '../components/Nav'
 
-export default function WhatIsIt() {
+export default function WhatIsItPage() {
 
   return (
-    <div>
-      <h1>What is an Arm’s Length Mortgage?</h1>
-    </div>
+    <Layout>
+      <Container>
+        <h1>What is an Arm’s Length Mortgage?</h1>
+      </Container>
+    </Layout>
   )
 }
