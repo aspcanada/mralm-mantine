@@ -1,14 +1,12 @@
-import Link from "next/link";
-
+import Nav from '../components/Nav'
+import Hero from '../components/Hero'
 
 export default function Index() {
 
   return (
-    <>
-      Main page
-      <hr />
-      <Link href="/blog">Blog here</Link>
-    </>
+    <div className="isolate bg-white">
+      <Nav />
+      <Hero />
+    </div>
   )
-
 }
