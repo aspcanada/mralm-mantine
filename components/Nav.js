@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Logo from '../public/logo.png'
 import Link from 'next/link'
+import WaitlistButton from './waitlist-modal'
 
 const navigation = [
   { name: 'What Is It?', href: '/what-is-it' },
@@ -66,12 +67,7 @@ export default function Nav() {
           >
             Sign up
           </a> */}
-          <a
-            href="#"
-            className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-sky-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-sky-700"
-          >
-            Join the Waitlist
-          </a>
+          <WaitlistButton />
         </div>
       </nav>
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
