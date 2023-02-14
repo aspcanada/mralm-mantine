@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero3() {
   return (
     <>
       {/* <div className="relative px-6 lg:px-8"> */}

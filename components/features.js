@@ -37,18 +37,26 @@ export default function Features() {
     <>
       <div className="bg-white py-24 sm:py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              Announcing our new platform.{' '}
+              <a href="#" className="font-semibold text-sky-600">
+                <span className="absolute inset-0" aria-hidden="true" />
+                Join the wait list <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-600">
-              Revolutionizing the Industry
-            </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Connecting Borrowers and Lenders for Greater Choice and Lower
-              Rates
-            </p>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Empowering Investors, Changing Lives
+            </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our community is revolutionizing the industry by connecting
-              borrowers with a network of lenders, providing greater choice and
-              lower rates.
+              Imagine the impact of bringing together real estate entrepreneurs,
+              investment opportunities, and private lenders in a single
+              platform. With our innovative peer-to-peer network and
+              comprehensive educational resources, you have the power to not
+              only grow your wealth but also make a positive impact by
+              supporting the growth and success of others.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
