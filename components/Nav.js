@@ -22,7 +22,10 @@ export default function Nav() {
 
   return (
     <div className="px-6 pt-6 lg:px-8">
-      <nav className="flex items-center justify-between" aria-label="Global">
+      <nav
+        className="flex items-center justify-between border-b-2 border-gray-100 py-6"
+        aria-label="Global"
+      >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Mr ALM</span>
@@ -44,19 +47,25 @@ export default function Nav() {
             <Link
               key={menu.name}
               href={menu.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
             >
               {menu.name}
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
+        <div className="hidden items-center lg:flex lg:flex-1 lg:justify-end">
+          <a
             href="#"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
           >
-            Log in <span aria-hidden="true">&rarr;</span>
-          </Link>
+            Sign in
+          </a>
+          <a
+            href="#"
+            className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-sky-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-sky-700"
+          >
+            Sign up
+          </a>
         </div>
       </nav>
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

@@ -7,7 +7,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Alert preview={preview} />
-      <div className="isolate bg-white">
+      <div className="isolate bg-white mx-auto max-w-7xl px-6">
         <Meta />
         <Nav />
         <div className="min-h-screen">
