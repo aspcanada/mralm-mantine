@@ -1,4 +1,9 @@
 export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    res.status(405).json({ error: 'Method not allowed' })
+    return
+  }
+
   const { email } = req.body
 
   if (!email) {
@@ -43,10 +48,8 @@ export default async function handler(req, res) {
   } catch (e) {
     console.error(e)
     console.log(e)
-    res
-      .status(400)
-      .json({
-        error: `Something went wrong, please try again later. [${e.message}]`,
-      })
+    res.status(400).json({
+      error: `Something went wrong, please try again later. [${e.message}]`,
+    })
   }
 }
