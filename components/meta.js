@@ -35,10 +35,7 @@ export default function Meta() {
         name="description"
         content="Educating Canadians how to invest in mortgages using their RRSPs."
       />
-      <title>
-        Mr Arms Length Mortgage | Educating Canadians how to invest in mortgages
-        using their RRSPs.
-      </title>
+      <title>InvestDirect | Empowering Investors, Changing Lives.</title>
     </Head>
   )
 }
