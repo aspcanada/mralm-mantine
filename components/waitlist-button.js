@@ -4,7 +4,50 @@ import { Dialog, Transition } from '@headlessui/react'
 export default function WaitlistButton() {
   const [open, setOpen] = useState(false)
 
+  // form state
+  const [emailInput, setEmailInput] = useState('')
+  const [buttonLoading, setButtonLoading] = useState(false)
+
   const cancelButtonRef = useRef(null)
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault()
+    // setButtonLoading(true)
+
+    // Get data from the form.
+    const data = {
+      email: emailInput,
+    }
+
+    // Form the request for sending data to the server.
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }
+
+    try {
+      // Send the form data to our subscribe API and get a response.
+      const res = await fetch('/api/subscribe', options)
+      const data = await res.json()
+
+      if (res.status === 200) {
+        alert('You are subscribed!')
+        setEmailInput('') // clear the input field
+        setOpen(false) // close the modal
+      } else {
+        alert(`Sorry, something went wrong.`)
+      }
+
+      // setButtonLoading(false)
+
+      // TODO: use toasts instead of alerts
+    } catch (e) {
+      alert('Something went wrong, please try again later.')
+    }
+  }
 
   return (
     <>
@@ -15,12 +58,13 @@ export default function WaitlistButton() {
       >
         Join the Waitlist
       </button>
+
       {open && (
         <Transition.Root show={open} as={Fragment}>
           <Dialog
             as="div"
             className="relative z-10"
-            initialFocus={cancelButtonRef}
+            // initialFocus={cancelButtonRef}
             onClose={setOpen}
           >
             <Transition.Child
@@ -52,18 +96,23 @@ export default function WaitlistButton() {
                         Join the waitlist
                       </h3>
                       <p className="mt-4 text-base text-gray-500">
-                        Be the first to join the most innovative peer-to-peer
-                        investing platform - sign up for our wait list now!
+                        We are still building... Subscribe for updates and 20%
+                        off when we launch. No spam, we promise!
                       </p>
-                      <form className="mt-4 sm:flex sm:max-w-md">
-                        <label htmlFor="email-address" className="sr-only">
+                      <form
+                        onSubmit={handleFormSubmit}
+                        className="mt-4 sm:flex sm:max-w-md"
+                      >
+                        <label htmlFor="email" className="sr-only">
                           Email address
                         </label>
                         <input
-                          type="email"
-                          name="email-address"
-                          id="email-address"
-                          autoComplete="email"
+                          type="text"
+                          // type="email"
+                          name="email"
+                          id="email"
+                          value={emailInput}
+                          onChange={(e) => setEmailInput(e.target.value)}
                           required
                           className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-sky-500 focus:placeholder-gray-400 focus:outline-none focus:ring-sky-500"
                           placeholder="Enter your email"
@@ -71,9 +120,10 @@ export default function WaitlistButton() {
                         <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                           <button
                             type="submit"
+                            // isLoading={buttonLoading}
                             className="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r bg-sky-600 bg-origin-border px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-sky-700"
                           >
-                            Join
+                            Subscribe
                           </button>
                         </div>
                       </form>
