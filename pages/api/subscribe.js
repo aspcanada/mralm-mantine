@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   const { email } = req.body
 
   if (!email) {
-    res.status(401).json({ error: 'Email is required' })
+    res.status(400).json({ error: 'Email is required' })
     return
   }
 
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
       } else {
         console.error(data.errors[0].error)
         console.log(data.errors[0].error)
-        res.status(401).json({ error: data.errors[0].error })
+        res.status(400).json({ error: data.errors[0].error })
       }
     } else {
       res.status(200).json({ success: true })
@@ -44,7 +44,9 @@ export default async function handler(req, res) {
     console.error(e)
     console.log(e)
     res
-      .status(401)
-      .json({ error: 'Something went wrong, please try again later.' })
+      .status(400)
+      .json({
+        error: `Something went wrong, please try again later. [${e.message}]`,
+      })
   }
 }
