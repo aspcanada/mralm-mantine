@@ -7,15 +7,15 @@ import Link from 'next/link'
 import WaitlistButton from './waitlist-button'
 
 const navigation = [
-  { name: 'What Is It?', href: '/what-is-it' },
-  {
-    name: 'Benefits',
-    href: '/benefits',
-  },
-  { name: 'Blog', href: '/blog' },
-  // { name: 'Marketplace', href: '#' },
-  { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
+  // { name: 'What Is It?', href: '/what-is-it' },
+  // {
+  //   name: 'Benefits',
+  //   href: '/benefits',
+  // },
+  // { name: 'Blog', href: '/blog' },
+  // // { name: 'Marketplace', href: '#' },
+  // { name: 'About', href: '/about' },
+  // { name: 'Contact', href: '/contact' },
 ]
 
 export default function Nav() {
@@ -28,9 +28,12 @@ export default function Nav() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Mr ALM</span>
-            <Image className="h-8" src={Logo} alt="" width={32} height={32} />
+          <Link href="/">
+            <span className="sr-only">InvestDirect</span>
+            <Image priority src={Logo} alt="" width={32} height={32} />
+          </Link>
+          <Link href="/">
+            <span className="text-2xl font-thin p-1">InvestDirect</span>
           </Link>
         </div>
         <div className="flex lg:hidden">
