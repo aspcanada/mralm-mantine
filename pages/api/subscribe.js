@@ -34,12 +34,15 @@ export default async function handler(req, res) {
         res.status(200).json({ success: true })
       } else {
         console.error(data.errors[0].error)
+        console.log(data.errors[0].error)
         res.status(401).json({ error: data.errors[0].error })
       }
     } else {
       res.status(200).json({ success: true })
     }
   } catch (e) {
+    console.error(e)
+    console.log(e)
     res
       .status(401)
       .json({ error: 'Something went wrong, please try again later.' })
