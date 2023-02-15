@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Logo from '../public/logo.png'
 import Link from 'next/link'
-import WaitlistButton from './waitlist-modal'
+import WaitlistButton from './waitlist-button'
 
 const navigation = [
   { name: 'What Is It?', href: '/what-is-it' },
@@ -22,7 +22,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="px-6 pt-6 lg:px-8">
+    <div className="isolate mx-auto max-w-7xl px-6 pt-6 lg:px-8">
       <nav
         className="flex items-center justify-between border-b-2 border-gray-100 py-6"
         aria-label="Global"
@@ -102,14 +102,14 @@ export default function Nav() {
                   </Link>
                 ))}
               </div>
-              <div className="py-6">
+              {/* <div className="py-6">
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
                 >
                   Join the Waitlist
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </Dialog.Panel>
