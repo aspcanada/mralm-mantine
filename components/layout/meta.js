@@ -33,7 +33,7 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content="Educating Canadians how to invest in mortgages using their RRSPs."
+        content="Bringing together real estate entrepreneurs, investment opportunities, and private lenders in a single platform."
       />
       <title>InvestDirect | Empowering Investors, Changing Lives.</title>
     </Head>
