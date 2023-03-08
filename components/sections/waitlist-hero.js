@@ -1,8 +1,8 @@
-import WaitlistButton from './waitlist-button'
+import WaitlistButton from '../waitlist-button'
 
 export default function WaitlistHero() {
   return (
-    <div className="bg-sky-100">
+    <div className="mt-6 bg-sky-100">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
         <h2 className="text-4xl font-bold tracking-tight text-gray-900">
           Be the first to know when we launch

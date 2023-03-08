@@ -1,9 +1,9 @@
-import Container from '../components/container'
-import MoreStories from '../components/blog/more-stories'
-import HeroPost from '../components/blog/hero-post'
-import Intro from '../components/blog/intro'
-import Layout from '../components/layout'
-import { getAllPostsForHome } from '../lib/api'
+import Container from '../../components/blog/container'
+import MoreStories from '../../components/blog/more-stories'
+import HeroPost from '../../components/blog/hero-post'
+import Intro from '../../components/blog/intro'
+import Layout from '../../components/layout'
+import { getAllPostsForHome } from '../../lib/api'
 import Head from 'next/head'
 
 export default function BlogPage({ preview, allPosts }) {

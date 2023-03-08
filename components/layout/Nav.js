@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import Logo from '../public/logo.png'
+import Logo from '../../public/logo.png'
 import Link from 'next/link'
-import WaitlistButton from './waitlist-button'
+import WaitlistButton from '../waitlist-button'
 
 const navigation = [
   // { name: 'What Is It?', href: '/what-is-it' },
