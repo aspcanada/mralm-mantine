@@ -22,7 +22,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="isolate mx-auto max-w-7xl px-6 pt-6 lg:px-8">
+    <div className="isolate mx-auto max-w-7xl px-6 lg:px-8">
       <nav
         className="flex items-center justify-between border-b-2 border-gray-100 py-6"
         aria-label="Global"
@@ -36,7 +36,7 @@ export default function Nav() {
             <span className="text-2xl font-thin p-1">InvestDirect</span>
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        {/* <div className="flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -45,7 +45,7 @@ export default function Nav() {
             <span className="sr-only">Open main menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
-        </div>
+        </div> */}
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((menu) => (
             <Link
@@ -73,6 +73,7 @@ export default function Nav() {
           <WaitlistButton />
         </div>
       </nav>
+
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <Dialog.Panel
           focus="true"
@@ -80,7 +81,7 @@ export default function Nav() {
         >
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">InvestDirect</span>
               <Image className="h-8" src={Logo} alt="" width={32} height={32} />
             </Link>
             <button
@@ -105,14 +106,14 @@ export default function Nav() {
                   </Link>
                 ))}
               </div>
-              {/* <div className="py-6">
+              <div className="py-6">
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
                 >
                   Join the Waitlist
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
         </Dialog.Panel>

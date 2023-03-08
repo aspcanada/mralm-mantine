@@ -17,7 +17,6 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import WaitlistButton from '../waitlist-button'
 
 export default function FeaturesAltSection() {
   return (
@@ -51,9 +50,7 @@ export default function FeaturesAltSection() {
                     opportunities, including residential and commercial
                     properties.
                   </p>
-                  <div className="mt-6">
-                    <WaitlistButton />
-                  </div>
+                  <div className="mt-6">{/* <WaitlistButton /> */}</div>
                 </div>
               </div>
 
@@ -62,8 +59,9 @@ export default function FeaturesAltSection() {
                 <blockquote>
                   <div>
                     <p className="text-base text-gray-500">
-                      &ldquo;Using InvestDirect was a game-changer for me,
-                      providing transparency and a seamless experience.&rdquo;
+                      &ldquo;I really like the idea of InvestDirect. I can see
+                      it helping investors connect with each other and explore
+                      opportunities&rdquo;
                     </p>
                   </div>
                   <footer className="mt-3">
@@ -78,7 +76,7 @@ export default function FeaturesAltSection() {
                         />
                       </div>
                       <div className="text-base font-medium text-gray-700">
-                        M Hill, Real Estate Investor
+                        L Hill, Real Estate Investor
                       </div>
                     </div>
                   </footer>
@@ -122,9 +120,7 @@ export default function FeaturesAltSection() {
                     Connect with private lenders from all around Canada and
                     expand your funding options.
                   </p>
-                  <div className="mt-6">
-                    <WaitlistButton />
-                  </div>
+                  <div className="mt-6">{/* <WaitlistButton /> */}</div>
                 </div>
               </div>
             </div>
