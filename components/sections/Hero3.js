@@ -22,7 +22,7 @@ export default function Hero3() {
             With our innovative peer-to-peer network and comprehensive
             educational resources, you have the power to not only grow your
             wealth but also make a positive impact by supporting the growth and
-            success of others.
+            success of others..
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
