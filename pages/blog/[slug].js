@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import _404Page from '../404'
-import Container from '../../components/container'
+import Container from '../../components/blog/container'
 import PostBody from '../../components/blog/post-body'
 import MoreStories from '../../components/blog/more-stories'
 import Header from '../../components/blog/header'
