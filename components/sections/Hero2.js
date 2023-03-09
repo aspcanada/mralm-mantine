@@ -26,8 +26,8 @@ export default function Hero2() {
               </h1>
               <p className="mx-auto mt-6 max-w-lg text-center text-xl text-sky-200 sm:max-w-3xl">
                 Imagine the impact of bringing together real estate
-                entrepreneurs, investment opportunities, and private lenders in
-                a single platform.
+                entrepreneurs, investment opportunities, and private investors
+                in a single platform.
               </p>
               <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                 <WaitlistButton />

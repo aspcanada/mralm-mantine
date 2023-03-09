@@ -18,8 +18,8 @@ export default function Hero3() {
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Imagine the impact of bringing together real estate entrepreneurs,
-            investment opportunities, and private lenders in a single platform.
-            With our innovative peer-to-peer network and comprehensive
+            investment opportunities, and private investors in a single
+            platform. With our innovative peer-to-peer network and comprehensive
             educational resources, you have the power to not only grow your
             wealth but also make a positive impact by supporting the growth and
             success of others..

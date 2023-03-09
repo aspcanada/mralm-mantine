@@ -13,9 +13,9 @@ const features = [
     icon: BanknotesIcon,
   },
   {
-    name: 'Network of Lenders',
+    name: 'Network of Investors',
     description:
-      'Connect with private lenders from all around Canada and expand your funding options.',
+      'Connect with private investors from all around Canada and expand your funding options.',
     icon: UserGroupIcon,
   },
   {
@@ -56,7 +56,7 @@ export default function Features() {
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Imagine the impact of bringing together real estate entrepreneurs,
-              investment opportunities, and private lenders in a single
+              investment opportunities, and private investors in a single
               platform. With our innovative peer-to-peer network and
               comprehensive educational resources, you have the power to not
               only grow your wealth but also make a positive impact by

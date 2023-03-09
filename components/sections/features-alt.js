@@ -114,10 +114,10 @@ export default function FeaturesAltSection() {
                 </div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                    Network of Lenders
+                    Network of Investors
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">
-                    Connect with private lenders from all around Canada and
+                    Connect with private investors from all around Canada and
                     expand your funding options.
                   </p>
                   <div className="mt-6">{/* <WaitlistButton /> */}</div>
