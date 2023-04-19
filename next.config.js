@@ -3,6 +3,12 @@ module.exports = {
   // images: {
   //   loader: 'custom',
   // },
+  // theme: {
+  //   container: {
+  //     center: true,
+  //     padding: '2rem',
+  //   },
+  // },
   images: {
     remotePatterns: [
       {

@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-base leading-5 text-gray-400">
-            &copy; 2023 InvestDirect. All rights reserved.
+            &copy; 2023 Mr Arms Length Mortgage. All rights reserved.
           </p>
         </div>
       </div>
