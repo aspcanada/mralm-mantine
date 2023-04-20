@@ -3,8 +3,10 @@ import Head from 'next/head'
 import Container from '../../components/blog/container'
 import Link from 'next/link'
 import WaitlistButton from '../../components/waitlist-button'
+import Banner from '../../components/sections/Banner'
+import WaitlistHero from '../../components/sections/waitlist-hero'
 
-export default function BenefitsPage() {
+export default function AmIQualifiedPage() {
   return (
     <Layout>
       <Head>
@@ -15,9 +17,12 @@ export default function BenefitsPage() {
         ></meta>
       </Head>
       <Container>
-        <h1 className="mt-4 text-2xl font-semibold text-gray-900">
-          WHO qualifies as a potential “RRSP-Mortgage” investor?
-        </h1>
+        <Banner
+          title={'Am I Qualified?'}
+          description={'WHO qualifies as a potential “RRSP-Mortgage” investor?'}
+          image={'/assets/cover-qualified.jpg'}
+          imageAlt={'Am I Qualified?'}
+        />
         <p className="mt-4">
           There are three basic categories of people qualified to participate in
           this type of investment. They are:
@@ -86,15 +91,14 @@ export default function BenefitsPage() {
         </p>
         <p className="mt-4">
           If you would like to invest your RRSPs in other people’s mortgages,
-          please have a look at our InvestDirect Community. It’s a marketplace
-          of lenders and borrowers and a great way to invest in mortgages and
-          earn a return on your investment.
+          please stay tuned. We are working on a solution for this.
         </p>
 
         <div className="mt-4 text-center">
           <WaitlistButton />
         </div>
       </Container>
+      <WaitlistHero />
     </Layout>
   )
 }

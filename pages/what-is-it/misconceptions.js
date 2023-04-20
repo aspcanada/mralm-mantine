@@ -2,21 +2,29 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Container from '../../components/blog/container'
 import Link from 'next/link'
+import Banner from '../../components/sections/Banner'
+import WaitlistHero from '../../components/sections/waitlist-hero'
 
-export default function BenefitsPage() {
+export default function MisconceptionsPage() {
   return (
     <Layout>
       <Head>
-        <title>Misconceptions | Mr Arms Length Mortgage</title>
+        <title>Misconception | Mr Arms Length Mortgage</title>
         <meta
           name="description"
           content="Important Clarification Here is one misconception we encounter often: people think their money is leaving their RRSP and/or they think they…"
         ></meta>
       </Head>
       <Container>
-        <h1 className="mt-4 text-2xl font-semibold text-gray-900">
-          Important Clarification
-        </h1>
+        <Banner
+          title={'Misconception'}
+          description={
+            'People think their money is leaving their RRSP or they think they are actually loaning the money so the borrower can buy a property'
+          }
+          image={'/assets/cover-misconception.jpg'}
+          imageAlt={'Misconception'}
+        />
+        <h1 className="mt-4 text-2xl font-semibold">Important Clarification</h1>
         <p className="mt-4">
           Here is one misconception we encounter often: people think their money
           is leaving their RRSP and/or they think they are actually loaning the
@@ -31,10 +39,10 @@ export default function BenefitsPage() {
         </p>
         <div>
           <p className="mt-4">
-            When you decide to invest in a private mortgage, the trustee (TD
-            Waterhouse Olympia Trust) takes your duffle bag of money from the
-            living room to the exercise room downstairs, where your money will
-            work much harder for a while.
+            When you decide to invest in a private mortgage, the trustee (ie:
+            Olympia Trust) takes your duffle bag of money from the living room
+            to the exercise room downstairs, where your money will work much
+            harder for a while.
           </p>
           <p className="mt-4">
             After the borrower buys, fixes and sells (or refinances) the
@@ -75,6 +83,7 @@ export default function BenefitsPage() {
           </Link>
         </div>
       </Container>
+      <WaitlistHero />
     </Layout>
   )
 }

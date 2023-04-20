@@ -2,8 +2,10 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Container from '../../components/blog/container'
 import Link from 'next/link'
+import Banner from '../../components/sections/Banner'
+import WaitlistHero from '../../components/sections/waitlist-hero'
 
-export default function BenefitsPage() {
+export default function WhosInvolvedPage() {
   return (
     <Layout>
       <Head>
@@ -14,16 +16,21 @@ export default function BenefitsPage() {
         ></meta>
       </Head>
       <Container>
-        <h1 className="mt-4 text-2xl font-semibold text-gray-900">
-          What are the ‘roles’ of the main three parties involved?
-        </h1>
+        <Banner
+          title={'Who’s All Involved?'}
+          description={
+            'What are the ‘roles’ of the main three parties involved?'
+          }
+          image={'/assets/cover-arms.jpg'}
+          imageAlt={'Who’s All Involved?'}
+        />
         <p className="mt-4">
           There are several players in a transaction like this, each with
           various duties and responsibilities to play. They are basically as
           follows (but not limited to):
         </p>
-        <div className="mt-4 ml-5 rounded-lg bg-sky-100 px-4 py-3 shadow">
-          <h3 className="font-semibold text-gray-900">
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 dark:bg-sky-900 px-4 py-3 shadow">
+          <h3 className="font-semibold">
             Real Estate Investor / Entrepreneur and team:
           </h3>
           <p className="mt-2">
@@ -38,8 +45,8 @@ export default function BenefitsPage() {
           </p>
         </div>
 
-        <div className="mt-4 ml-5 rounded-lg bg-sky-100 px-4 py-3 shadow">
-          <h3 className="font-semibold text-gray-900">
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 dark:bg-sky-900 px-4 py-3 shadow">
+          <h3 className="font-semibold">
             RRSP/Planholder Investor and advisors (that’s YOU):
           </h3>
           <p className="mt-2">
@@ -53,8 +60,8 @@ export default function BenefitsPage() {
           </p>
         </div>
 
-        <div className="mt-4 ml-5 rounded-lg bg-sky-100 px-4 py-3 shadow">
-          <h3 className="font-semibold text-gray-900">Trustee:</h3>
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 dark:bg-sky-900 px-4 py-3 shadow">
+          <h3 className="font-semibold">Trustee:</h3>
           <p className="mt-2">
             The trustee is a financial institution (like Olympia Trust) that is
             set up as a stakeholder for the planholders of RRSP monies and their
@@ -93,6 +100,7 @@ export default function BenefitsPage() {
           </Link>
         </div>
       </Container>
+      <WaitlistHero />
     </Layout>
   )
 }

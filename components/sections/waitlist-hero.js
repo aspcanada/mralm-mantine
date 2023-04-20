@@ -9,8 +9,9 @@ export default function WaitlistHero() {
           <br />
           <span className="text-2xl font-light">
             {' '}
-            We are still building. Subscribe for updates and 20% off when we
-            launch. No spam, we promise!
+            We’re working on a marketplace of lenders and borrowers to provide a
+            great way to invest in mortgages and earn a return on your
+            investment.
           </span>
         </h2>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">

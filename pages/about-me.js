@@ -2,27 +2,35 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import Container from '../components/blog/container'
 import Link from 'next/link'
+import Banner from '../components/sections/Banner'
+import WaitlistHero from '../components/sections/waitlist-hero'
 
-export default function WhatIsItPage() {
+export default function AboutMePage() {
   return (
     <Layout>
       <Head>
         <title>About Me | Mr Arms Length Mortgage</title>
         <meta
           name="description"
-          content="Hi there, my name is Alain St. Pierre, founder of Mr. Arm’s Length Mortgage and ASP Canada Real Estate Group.  My passion is to teach…"
+          content="Hi there, my name is Alain St. Pierre, founder of Mr. Arm’s Length Mortgage and St Avant Capital Corp.  My passion is to teach…"
         ></meta>
       </Head>
       <Container>
-        <h1 className="mt-4 text-2xl font-semibold text-gray-900">About Me</h1>
+        <Banner
+          title={'About Me'}
+          description={
+            'Founder of Mr. Arm’s Length Mortgage and St Avant Capital Corp.'
+          }
+          image={'/assets/cover-aboutme.jpeg'}
+          imageAlt={'About Me'}
+        />
 
         <p className="mt-4">
           Hi there, my name is Alain St. Pierre, founder of Mr. Arm’s Length
-          Mortgage and ASP Canada Real Estate Group. My passion is to teach
-          Canadians how to invest in mortgages using their RRSP’s (and other
-          registered accounts). I’ve become the defacto “Arm’s Length Mortgage”
-          guy, as Ranked #1 on Google and I receive 500+ hits per month on my
-          blog.
+          Mortgage and St Avant Capital Corp. My passion is to teach Canadians
+          how to invest in mortgages using their RRSP’s (and other registered
+          accounts). I’ve become the defacto “Arm’s Length Mortgage” guy, as
+          Ranked #1 on Google and I receive 500+ hits per month on my blog.
         </p>
         <p className="mt-4">
           I have experience in putting together RRSP mortgages and other
@@ -48,6 +56,7 @@ export default function WhatIsItPage() {
         <p className="mt-4"></p>
         <p className="mt-4"></p>
       </Container>
+      <WaitlistHero />
     </Layout>
   )
 }

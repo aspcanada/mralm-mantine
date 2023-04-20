@@ -42,10 +42,10 @@ export default function FeaturesAltSection() {
                   </span>
                 </div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                  <h2 className="text-3xl font-bold tracking-tight">
                     Investment Opportunities
                   </h2>
-                  <p className="mt-4 text-lg text-gray-500">
+                  <p className="mt-4 text-lg">
                     Access to a diverse range of real estate investment
                     opportunities, including residential and commercial
                     properties.
@@ -58,7 +58,7 @@ export default function FeaturesAltSection() {
               <div className="mt-8 border-t border-gray-200 pt-6">
                 <blockquote>
                   <div>
-                    <p className="text-base text-gray-500">
+                    <p className="text-base">
                       &ldquo;I really like the idea of InvestDirect. I can see
                       it helping investors connect with each other and explore
                       opportunities&rdquo;
@@ -75,7 +75,7 @@ export default function FeaturesAltSection() {
                           height={24}
                         />
                       </div>
-                      <div className="text-base font-medium text-gray-700">
+                      <div className="text-base font-medium">
                         L Hill, Real Estate Investor
                       </div>
                     </div>
@@ -113,10 +113,10 @@ export default function FeaturesAltSection() {
                   </span>
                 </div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                  <h2 className="text-3xl font-bold tracking-tight">
                     Network of Investors
                   </h2>
-                  <p className="mt-4 text-lg text-gray-500">
+                  <p className="mt-4 text-lg">
                     Connect with private investors from all around Canada and
                     expand your funding options.
                   </p>

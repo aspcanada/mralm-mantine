@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Container from '../../components/blog/container'
 import Link from 'next/link'
 import Banner from '../../components/sections/Banner'
+import WaitlistHero from '../../components/sections/waitlist-hero'
 
 export default function WhatIsItPage() {
   return (
@@ -108,6 +109,7 @@ export default function WhatIsItPage() {
           </Link>
         </div>
       </Container>
+      <WaitlistHero />
     </Layout>
   )
 }

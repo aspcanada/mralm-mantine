@@ -2,6 +2,8 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Container from '../../components/blog/container'
 import Link from 'next/link'
+import Banner from '../../components/sections/Banner'
+import WaitlistHero from '../../components/sections/waitlist-hero'
 
 export default function BenefitsPage() {
   return (
@@ -14,74 +16,91 @@ export default function BenefitsPage() {
         ></meta>
       </Head>
       <Container>
-        <h1 className="mt-4 text-2xl font-semibold text-gray-900">
+        <Banner
+          title={'Benefits & Features'}
+          description={
+            'An Arm’s Length Mortgage provides many excellent benefits for the person interested in turning their RRSP money into one or more mortgages'
+          }
+          image={'/assets/cover-benefits.jpg'}
+          imageAlt={'Benefits & Features'}
+        />
+        <h1 className="mt-4 text-2xl font-semibold">
           The BENEFITS for YOU, the INVESTOR
         </h1>
         <p className="mt-4">
-          An Arm’s Length Mortgage provides many excellent benefits for the
-          person interested in turning their RRSP money into one or more
-          mortgages, such as:
           <ul className="mt-4 ml-5 list-disc">
             <li className="mt-2">
-              Offers a Consistent, Predictable Return on Investment Regardless
-              of the fluctuations in the market and the status of the world
-              economy, you know your investment will earn you X% of interest
-              over Y number of months or years.
+              <span className="font-bold">
+                Offers a Consistent, Predictable Return on Investment
+              </span>
+              <br />
+              Regardless of the fluctuations in the market and the status of the
+              world economy, you know your investment will earn you X% of
+              interest over Y number of months or years.
             </li>
             <li className="mt-2">
-              Simplified Retirement Planning You know precisely HOW MUCH money
-              will be added to your RRSP account (unlike floating interest rates
-              or dividends or sales from stocks) and WHEN money will be added to
-              your RRSP account.
+              <span className="font-bold">Simplified Retirement Planning</span>
+              <br />
+              You know precisely HOW MUCH money will be added to your RRSP
+              account (unlike floating interest rates or dividends or sales from
+              stocks) and WHEN money will be added to your RRSP account.
             </li>
             <li className="mt-2">
-              High Return You typically get a much higher return on investment
-              than you currently receive with other investment vehicles.
-              Pre-Defined Investment Terms You know precisely when your
-              investment money is no longer being used for a mortgage and is
-              returned to your account.
+              <span className="font-bold">High Return</span>
+              <br />
+              You typically get a much higher return on investment than you
+              currently receive with other investment vehicles. Pre-Defined
+              Investment Terms You know precisely when your investment money is
+              no longer being used for a mortgage and is returned to your
+              account.
             </li>
             <li className="mt-2">
-              You Have Full Control You, the Investor, have full control over
-              which mortgage you want to invest in (unlike mutual funds).
+              <span className="font-bold">Full Control</span>
+              <br /> You, the Investor, have full control over which mortgage
+              you want to invest in (unlike mutual funds).
             </li>
             <li className="mt-2">
-              Secured by Real Estate Your investment is secured by REAL estate…
-              unlike money invested paper assets like (Mutual Funds, GICs,
-              Stocks, etc).
+              <span className="font-bold">Secured by Real Estate</span>
+              <br />
+              Your investment is secured by REAL estate… unlike money invested
+              paper assets like (Mutual Funds, GICs, Stocks, etc).
             </li>
             <li className="mt-2">
-              No Time Required After spending a bit of time to set up the
-              process, you won’t need to spend time on this since the trustee,
-              lawyer and borrower do ALL the work.
+              <span className="font-bold">No Time Required </span>
+              <br />
+              After spending a bit of time to set up the process, you won’t need
+              to spend time on this since the trustee, lawyer and borrower do
+              ALL the work.
             </li>
             <li className="mt-2">
-              No Special Expertise Required No expertise required on your part
-              (the borrower uses a team of professionals: lawyer, realtor,
-              accountant), and the trustee is well-experienced in this type of
-              transaction.
+              <span className="font-bold">No Special Expertise Required </span>
+              <br /> No expertise required on your part (the borrower uses a
+              team of professionals: lawyer, realtor, accountant), and the
+              trustee is well-experienced in this type of transaction.
             </li>
             <li className="mt-2">
-              Contribution Limits are NOT Affected The repayments back into your
-              RRSP do not affect your contribution limits for the year—the money
-              is simply being returned to you—along with the interest.
+              <span className="font-bold">
+                Contribution Limits are NOT Affected
+              </span>
+              <br /> The repayments back into your RRSP do not affect your
+              contribution limits for the year—the money is simply being
+              returned to you—along with the interest.
             </li>
             <li className="mt-2">
-              Wash, Rinse and REPEAT Best of all, when the invested money is
-              returned to your RRSP, you have full control over what you want to
-              invest the money in again—either another mortgage, or conventional
-              instruments such as GIC’s bonds, stock or mutual funds.
+              <span className="font-bold">Wash, Rinse and REPEAT</span>
+              <br />
+              Best of all, when the invested money is returned to your RRSP, you
+              have full control over what you want to invest the money in
+              again—either another mortgage, or conventional instruments such as
+              GIC’s bonds, stock or mutual funds.
             </li>
           </ul>
         </p>
 
-        <h1 className="mt-4 text-2xl font-semibold text-gray-900">
+        <h1 className="mt-4 text-2xl font-semibold">
           The FEATURES for YOU, the INVESTOR
         </h1>
         <p className="mt-4">
-          An Arm’s Length Mortgage provides many excellent benefits for the
-          person interested in turning their RRSP money into one or more
-          mortgages, such as:
           <ul className="mt-4 ml-5 list-disc">
             <li className="mt-2">
               This investment strategy is fully approved by the Canada Revenue
@@ -144,6 +163,7 @@ export default function BenefitsPage() {
           </Link>
         </div>
       </Container>
+      <WaitlistHero />
     </Layout>
   )
 }
