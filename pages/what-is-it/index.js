@@ -22,7 +22,7 @@ export default function WhatIsItPage() {
           description={
             'An “Arm’s Length Mortgage” refers to a mortgage that is held within an individual’s registered retirement investment account (RRSP).'
           }
-          image={'/assets/cover2.jpg'}
+          image={'/assets/cover-what-is-it.jpg'}
           imageAlt={'What is an Arm’s Length Mortgage?'}
         />
 
