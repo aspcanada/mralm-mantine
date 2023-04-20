@@ -26,7 +26,7 @@ export default function Nav() {
   }
 
   return (
-    <div className="isolate mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="isolate mx-auto max-w-7xl px-6 mb-5 lg:px-8">
       <nav
         className="flex items-center justify-between border-b-2 border-gray-100 py-6"
         aria-label="Global"
@@ -55,14 +55,14 @@ export default function Nav() {
             <Link
               key={menu.name}
               href={menu.href}
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+              className="whitespace-nowrap text-base font-medium  hover:text-sky-600"
             >
               {menu.name}
             </Link>
           ))}
           <button
             onClick={openChat}
-            className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+            className="whitespace-nowrap text-base font-medium hover:text-sky-600"
           >
             Contact
           </button>

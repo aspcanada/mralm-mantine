@@ -22,7 +22,7 @@ export default function BenefitsPage() {
           various duties and responsibilities to play. They are basically as
           follows (but not limited to):
         </p>
-        <div className="mt-4 ml-5 rounded-lg bg-slate-50 px-4 py-3 shadow">
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 px-4 py-3 shadow">
           <h3 className="font-semibold text-gray-900">
             Real Estate Investor / Entrepreneur and team:
           </h3>
@@ -38,7 +38,7 @@ export default function BenefitsPage() {
           </p>
         </div>
 
-        <div className="mt-4 ml-5 rounded-lg bg-slate-50 px-4 py-3 shadow">
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 px-4 py-3 shadow">
           <h3 className="font-semibold text-gray-900">
             RRSP/Planholder Investor and advisors (that’s YOU):
           </h3>
@@ -53,7 +53,7 @@ export default function BenefitsPage() {
           </p>
         </div>
 
-        <div className="mt-4 ml-5 rounded-lg bg-slate-50 px-4 py-3 shadow">
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 px-4 py-3 shadow">
           <h3 className="font-semibold text-gray-900">Trustee:</h3>
           <p className="mt-2">
             The trustee is a financial institution (like Olympia Trust) that is

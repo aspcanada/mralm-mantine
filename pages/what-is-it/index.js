@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Container from '../../components/blog/container'
 import Link from 'next/link'
+import Banner from '../../components/sections/Banner'
 
 export default function WhatIsItPage() {
   return (
@@ -16,13 +17,15 @@ export default function WhatIsItPage() {
         ></meta>
       </Head>
       <Container>
-        <h1 className="mt-4 text-2xl font-semibold text-gray-900">
-          What is an Arm’s Length Mortgage?
-        </h1>
-        <p className="mt-4">
-          An “Arm’s Length Mortgage” refers to a mortgage that is held within an
-          individual’s registered retirement investment account (RRSP).
-        </p>
+        <Banner
+          title={'What is an Arm’s Length Mortgage?'}
+          description={
+            'An “Arm’s Length Mortgage” refers to a mortgage that is held within an individual’s registered retirement investment account (RRSP).'
+          }
+          image={'/assets/cover2.jpg'}
+          imageAlt={'What is an Arm’s Length Mortgage?'}
+        />
+
         <p className="mt-4">
           Many of you know that you can use your RRSP money with the Home
           Buyer’s Plan to buy your first home. Many of you have done that
@@ -49,17 +52,15 @@ export default function WhatIsItPage() {
           To summarize for you, there are three different ways to use RRSP money
           to invest in real estate:
         </p>
-        <div className="mt-4 ml-5 rounded-lg bg-slate-50 px-4 py-3 shadow">
-          <h3 className="font-semibold text-gray-900">Home Buyer’s Plan</h3>
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 dark:bg-sky-900 px-4 py-3 shadow">
+          <h3 className="font-semibold ">Home Buyer’s Plan</h3>
           <p className="mt-2">
             You borrow from your own RRSP to buy your first home (withdrawals
             must be repaid within 15 years).
           </p>
         </div>
-        <div className="mt-4 ml-5 rounded-lg bg-slate-50 px-4 py-3 shadow">
-          <h3 className="font-semibold text-gray-900">
-            Non-Arm’s Length Mortgage
-          </h3>
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 dark:bg-sky-900 px-4 py-3 shadow">
+          <h3 className="font-semibold ">Non-Arm’s Length Mortgage</h3>
           <p className="mt-2">
             You (as an investor looking to buy real estate property which is NOT
             your first home) borrow from your own RRSP or that of a family
@@ -70,8 +71,8 @@ export default function WhatIsItPage() {
             standards.
           </p>
         </div>
-        <div className="mt-4 ml-5 rounded-lg bg-slate-50 px-4 py-3 shadow">
-          <h3 className="font-semibold text-gray-900">
+        <div className="mt-4 ml-5 rounded-lg bg-sky-100 dark:bg-sky-900 px-4 py-3 shadow">
+          <h3 className="font-semibold ">
             Arm’s Length Mortgage (this is the one this article focuses on)
           </h3>
           <p className="mt-2">
