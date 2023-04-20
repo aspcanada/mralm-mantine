@@ -14,7 +14,7 @@ export default function BlogPage({ preview, allPosts }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Blog | InvestDirect</title>
+          <title>Blog | Mr Arms Length Mortgage</title>
         </Head>
         <Container>
           <Intro />
