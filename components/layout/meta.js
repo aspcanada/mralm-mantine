@@ -35,7 +35,9 @@ export default function Meta() {
         name="description"
         content="Bringing together real estate entrepreneurs, investment opportunities, and private investors in a single platform."
       />
-      <title>InvestDirect | Empowering Investors, Changing Lives.</title>
+      <title>
+        Mr Arms Length Mortgage | Empowering Investors, Changing Lives.
+      </title>
     </Head>
   )
 }
