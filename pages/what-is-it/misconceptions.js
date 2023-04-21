@@ -55,20 +55,20 @@ export default function MisconceptionsPage() {
           <p className="mt-4">
             Now, the two important things to realize through this analogy are
             that:
-            <ol className="ml-10 list-decimal">
-              <li className="mt-2">
-                Your money NEVER leaves the RRSP “house”, never leaves your
-                control, the borrower doesn’t see it, touch it, or handle it in
-                any way, and
-              </li>
-              <li className="mt-2">
-                the trustee is the key element in the transaction as far as
-                you’re concerned, not the borrower. The trustee is working for
-                YOU, because you are the trustee’s client, so they will take
-                very good care of your money.
-              </li>
-            </ol>
           </p>
+          <ol className="ml-10 list-decimal">
+            <li className="mt-2">
+              Your money NEVER leaves the RRSP “house”, never leaves your
+              control, the borrower doesn’t see it, touch it, or handle it in
+              any way, and
+            </li>
+            <li className="mt-2">
+              the trustee is the key element in the transaction as far as you’re
+              concerned, not the borrower. The trustee is working for YOU,
+              because you are the trustee’s client, so they will take very good
+              care of your money.
+            </li>
+          </ol>
         </div>
         <p className="mt-4">
           I hope this helps you understand this important misconception.
