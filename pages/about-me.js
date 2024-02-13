@@ -63,10 +63,10 @@ export default function AboutMePage() {
           my expertise in the field.
         </p>
         <p className="mt-4">
-          I&apos;m in the process of becoming a Private Wealth Advisor for
-          Raintree Financial Solutions. My focus is on demystifying the private
-          exempt market and showing investors how to diversify their portfolios
-          effectively, offering alternatives to traditional investment routes.
+          I&apos;m in the process of becoming a Private Wealth Advisor. My focus
+          is on demystifying the private exempt market and showing investors how
+          to diversify their portfolios effectively, offering alternatives to
+          traditional investment routes.
         </p>
         <h1 className="mt-8 text-xl font-semibold">Why I Do What I Do</h1>
         <p className="mt-4">
