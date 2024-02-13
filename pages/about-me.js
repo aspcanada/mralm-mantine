@@ -12,7 +12,7 @@ export default function AboutMePage() {
         <title>About Me | Mr Arms Length Mortgage</title>
         <meta
           name="description"
-          content="Hi there, my name is Alain St. Pierre, founder of Mr. Arm’s Length Mortgage and St Avant Capital Corp.  My passion is to teach…"
+          content="Hi there, my name is Alain St. Pierre, founder of Mr. Arm's Length Mortgage and St Avant Capital Corp.  My passion is to teach…"
         ></meta>
       </Head>
       <Container>
@@ -36,11 +36,11 @@ export default function AboutMePage() {
 
         <h1 className="mt-8 text-xl font-semibold">Who I Am</h1>
         <p className="mt-4">
-          I'm Alain St. Pierre, a former senior software engineer with 28 years
-          of experience working remotely in the tech industry. My career was
-          fulfilling, rich in challenges, and rewarding in accomplishments.
+          I&apos;m Alain St. Pierre, a former senior software engineer with 28
+          years of experience working remotely in the tech industry. My career
+          was fulfilling, rich in challenges, and rewarding in accomplishments.
           However, despite the success, I felt a void—a lack of real, human
-          connection and a desire to make a tangible difference in people's
+          connection and a desire to make a tangible difference in people&apos;s
           lives.
         </p>
         <p className="mt-4">
@@ -48,7 +48,7 @@ export default function AboutMePage() {
           meaningful interactions, I embarked on a new path. I sold most of my
           real estate portfolio at the peak of the market in 2022 and delved
           into the world of private lending on land development and mortgages.
-          This transition wasn't just about financial growth; it was about
+          This transition wasn&apos;t just about financial growth; it was about
           pursuing a life filled with purpose, flexibility, and the ability to
           spend more time with my family.
         </p>
@@ -63,9 +63,9 @@ export default function AboutMePage() {
           my expertise in the field.
         </p>
         <p className="mt-4">
-          I'm in the process of becoming a Private Wealth Advisor for Raintree
-          Financial Solutions. My focus is on demystifying the private exempt
-          market and showing investors how to diversify their portfolios
+          I&apos;m in the process of becoming a Private Wealth Advisor for
+          Raintree Financial Solutions. My focus is on demystifying the private
+          exempt market and showing investors how to diversify their portfolios
           effectively, offering alternatives to traditional investment routes.
         </p>
         <h1 className="mt-8 text-xl font-semibold">Why I Do What I Do</h1>
@@ -77,13 +77,14 @@ export default function AboutMePage() {
           aim to empower individuals with the knowledge and tools they need to
           make informed investment decisions.
         </p>
-        <h1 className="mt-8 text-xl font-semibold">Let's Connect</h1>
+        <h1 className="mt-8 text-xl font-semibold">Let&apos;s Connect</h1>
         <p className="mt-4">
-          Whether you're seeking to diversify your investment portfolio, explore
-          the possibilities of private capital markets, or simply looking for a
-          guide to navigate the world of finance, I'm here to help. My journey
-          has taught me the importance of taking control of one's financial
-          future, and I'm passionate about helping others do the same.
+          Whether you&apos;re seeking to diversify your investment portfolio,
+          explore the possibilities of private capital markets, or simply
+          looking for a guide to navigate the world of finance, I&apos;m here to
+          help. My journey has taught me the importance of taking control of
+          one&apos;s financial future, and I&apos;m passionate about helping
+          others do the same.
         </p>
         <p className="mt-4">
           Join me in exploring the potential of your financial future. Together,
