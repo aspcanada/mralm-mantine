@@ -11,6 +11,7 @@ export default function Banner({ title, description, image, imageAlt }) {
             alt={imageAlt}
             width={1216}
             height={498}
+            priority="true"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-sky-800 to-sky-700 mix-blend-multiply" />
         </div>

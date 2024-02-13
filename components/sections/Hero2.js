@@ -14,6 +14,7 @@ export default function Hero2() {
                 className="h-full w-full object-cover"
                 src="/assets/cover3.jpg"
                 alt="Take control of your investments"
+                priority="true"
                 width={1216}
                 height={498}
               />
