@@ -25,32 +25,69 @@ export default function AboutMePage() {
           imageAlt={'About Me'}
         />
 
+        <h1 className="mt-8 text-2xl font-semibold">
+          My Journey: From Code to Capital
+        </h1>
         <p className="mt-4">
-          Hi there, my name is Alain St. Pierre, founder of Mr. Arm’s Length
-          Mortgage and St Avant Capital Corp. My passion is to teach Canadians
-          how to invest in mortgages using their RRSP’s (and other registered
-          accounts). I’ve become the defacto “Arm’s Length Mortgage” guy, as
-          Ranked #1 on Google and I receive 500+ hits per month on my blog.
+          Welcome to my corner of the web, where finance meets freedom, and
+          where I share my journey from a remote software engineer to a
+          passionate investor and financial educator.
+        </p>
+
+        <h1 className="mt-8 text-xl font-semibold">Who I Am</h1>
+        <p className="mt-4">
+          I'm Alain St. Pierre, a former senior software engineer with 28 years
+          of experience working remotely in the tech industry. My career was
+          fulfilling, rich in challenges, and rewarding in accomplishments.
+          However, despite the success, I felt a void—a lack of real, human
+          connection and a desire to make a tangible difference in people's
+          lives.
         </p>
         <p className="mt-4">
-          I have experience in putting together RRSP mortgages and other
-          creative financing strategies. I currently own 5 doors across Western
-          Canada and continue to add to my personal real estate portfolio.
+          Driven by a passion for personal finance and a yearning for more
+          meaningful interactions, I embarked on a new path. I sold most of my
+          real estate portfolio at the peak of the market in 2022 and delved
+          into the world of private lending on land development and mortgages.
+          This transition wasn't just about financial growth; it was about
+          pursuing a life filled with purpose, flexibility, and the ability to
+          spend more time with my family.
+        </p>
+
+        <h1 className="mt-8 text-xl font-semibold">My Mission</h1>
+        <p className="mt-4">
+          As I navigated the complexities of the private capital markets, I
+          realized the immense value and potential that lay in educating others
+          about these opportunities. My mission became clear: to help others
+          achieve financial freedom and escape the rat race. With this goal in
+          mind, I took the Exempt Market Proficiency course, further solidifying
+          my expertise in the field.
         </p>
         <p className="mt-4">
-          My passion in Real Estate Investing started when I bought my first
-          property in 2007 and refinanced it two years later to pay off my
-          student loans and bought out my JV partner. I still own the house and
-          while I have no money into it, I continue to see it put money in my
-          pocket! After seeing the potential to make money in Real Estate, I
-          decided to educate myself. I’ve attended Real Estate Investing
-          courses, read books and joined investment clubs and met a lot of great
-          people along the way. I am a REIN Member and find myself expanding my
-          context each and every day!
+          I'm in the process of becoming a Private Wealth Advisor for Raintree
+          Financial Solutions. My focus is on demystifying the private exempt
+          market and showing investors how to diversify their portfolios
+          effectively, offering alternatives to traditional investment routes.
+        </p>
+        <h1 className="mt-8 text-xl font-semibold">Why I Do What I Do</h1>
+        <p className="mt-4">
+          My journey from coding at a desk to engaging with real people about
+          their financial futures has been incredibly rewarding. I believe in
+          the power of alternative investments and the importance of financial
+          education. Through my blog, consulting, and speaking engagements, I
+          aim to empower individuals with the knowledge and tools they need to
+          make informed investment decisions.
+        </p>
+        <h1 className="mt-8 text-xl font-semibold">Let's Connect</h1>
+        <p className="mt-4">
+          Whether you're seeking to diversify your investment portfolio, explore
+          the possibilities of private capital markets, or simply looking for a
+          guide to navigate the world of finance, I'm here to help. My journey
+          has taught me the importance of taking control of one's financial
+          future, and I'm passionate about helping others do the same.
         </p>
         <p className="mt-4">
-          If you have any questions or comments, please don’t hesitate to
-          contact me directly. I look forward to speaking with you!
+          Join me in exploring the potential of your financial future. Together,
+          we can turn your financial goals into reality.
         </p>
         <p className="mt-4"></p>
         <p className="mt-4"></p>
